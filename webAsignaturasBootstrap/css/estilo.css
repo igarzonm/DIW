@@ -1,0 +1,235 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#main {
+    display: flex;
+    flex: 1;
+}
+
+#main>article {
+    flex: 1;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+}
+
+#main>nav,
+#main>aside {
+    flex: 0 0 20vw;
+    background-color: #DEEEBC;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+}
+
+#main>nav {
+    order: -1;
+}
+
+header,
+footer {
+    background: #CEFF7D;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header,
+footer,
+article,
+nav,
+aside {
+    padding: 1em;
+}
+
+#foot {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 40%;
+    margin-left: 45%;
+}
+
+footer {
+    background-color: lightgray;
+}
+
+.example_c {
+    color: #494949 !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #ffffff;
+    padding: 5px;
+    border: 2px solid #494949 !important;
+    display: inline-block;
+    transition: all 0.4s ease 0s;
+}
+
+.example_c:hover {
+    color: #ffffff !important;
+    background: #f6b93b;
+    border-color: #ad7e20 !important;
+    transition: all 0.4s ease 0s;
+}
+
+.myButton {
+    box-shadow: inset 0px 1px 0px 0px #ffffff;
+    background: linear-gradient(to bottom, #c2c2c2 5%, #dfdfdf 100%);
+    background-color: #c2c2c2;
+    border-radius: 6px;
+    border: 1px solid #d4d0d4;
+    display: inline-block;
+    cursor: pointer;
+    color: #7a787a;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ffffff;
+}
+
+.myButton:hover {
+    background: linear-gradient(to bottom, #dfdfdf 5%, #c2c2c2 100%);
+    background-color: #dfdfdf;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+button {
+    background-color: white;
+}
+
+button:hover {
+    background-color: red;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin: 8%
+}
+
+.div1 {
+    grid-area: 1 / 1 / 2 / 2;
+    padding: 10px;
+    background-color: #F2F1F1;
+}
+
+.div2 {
+    grid-area: 3 / 1 / 4 / 2;
+    padding: 10px;
+    background-color: #F2F1F1;
+}
+
+.div3 {
+    grid-area: 1 / 3 / 2 / 4;
+    padding: 10px;
+    background-color: #F2F1F1;
+}
+
+.div4 {
+    grid-area: 3 / 3 / 4 / 4;
+    padding: 10px;
+    background-color: #F2F1F1;
+}
+
+.div5 {
+    grid-area: 1 / 5 / 2 / 6;
+    padding: 10px;
+    background-color: #F2F1F1;
+}
+
+.div6 {
+    grid-area: 3 / 5 / 4 / 6;
+    padding: 10px;
+    background-color: #F2F1F1;
+}
+
+.parent2 {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.div7 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.div8 {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.div9 {
+    grid-area: 1 / 5 / 2 / 6;
+}
+
+.div10 {
+    grid-area: 1 / 7 / 2 / 8;
+}
+
+
+.example_c {
+    color: #494949 !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #ffffff;
+    padding: 5px;
+    border: 2px solid #494949 !important;
+    display: inline-block;
+    transition: all 0.4s ease 0s;
+}
+
+.example_c:hover {
+    color: #ffffff !important;
+    background: #f6b93b;
+    border-color: #ad7e20 !important;
+    transition: all 0.4s ease 0s;
+}
+
+.myButton2 {
+    box-shadow: 0px 10px 14px -7px #d0d8d9;
+    background: linear-gradient(to bottom, #858585 5%, #a8a8a8 100%);
+    background-color: #858585;
+    border-radius: 36px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+
+    font-size: 12px;
+    padding: 13px 32px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #9da1a3;
+}
+
+.myButton2:hover {
+    background: linear-gradient(to bottom, #a8a8a8 5%, #858585 100%);
+    background-color: #a8a8a8;
+}
+
+.myButton2:active {
+    position: relative;
+    top: 1px;
+}

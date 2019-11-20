@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        #nav1 {
+            background: #CEFF7D !important;
+        }
+
+        #titulo {
+            font-style: oblique;
+            color: #8A8888;
+        }
+
+        #nav2 {
+            background-color: rgb(218, 250, 167);
+        }
+
+        .example_c {
+            color: #494949 !important;
+            text-transform: uppercase;
+            text-decoration: none;
+            background: #ffffff;
+            padding: 5px;
+            border: 2px solid #494949 !important;
+            display: inline-block;
+            transition: all 0.4s ease 0s;
+        }
+
+        .example_c:hover {
+            color: #ffffff !important;
+            background: #f6b93b;
+            border-color: #ad7e20 !important;
+            transition: all 0.4s ease 0s;
+        }
+
+        .myButton {
+            box-shadow: inset 0px 1px 0px 0px #ffffff;
+            background: linear-gradient(to bottom, #c2c2c2 5%, #dfdfdf 100%);
+            background-color: #c2c2c2;
+            border-radius: 6px;
+            border: 1px solid #d4d0d4;
+            cursor: pointer;
+            color: #7a787a;
+            font-family: Arial;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 6px 24px;
+            width: 50%;
+            text-decoration: none;
+            text-shadow: 0px 1px 0px #ffffff;
+            margin-left: 25%;
+        }
+
+        .myButton:hover {
+            background: linear-gradient(to bottom, #dfdfdf 5%, #c2c2c2 100%);
+            background-color: #dfdfdf;
+        }
+
+        .myButton:active {
+            position: relative;
+            top: 1px;
+        }
+
+        footer {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <nav id="nav1" class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="navbar-brand">
+            <img id="img" class="rounded-circle" src="img/descarga.png" data-toggle="modal" data-target="#myModal"
+                width="80" height="80" class="d-inline-block align-top">
+        </div>
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">IES Alixar</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div id="map-container" class="z-depth-1-half map-container">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12681.178657673763!2d-6.0584284!3d37.3828632!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1ca80e208bb71b4d!2sInstituto%20de%20Educaci%C3%B3n%20Secundaria%20Alixar!5e0!3m2!1ses!2ses!4v1574246593721!5m2!1ses!2ses" width="470" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        </div>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <h3 style="margin-bottom: 0px !important;">IES Alixar</h3>
+
+        <div class="ml-auto">
+            <h3 style="margin-bottom: 0px !important;" id="titulo">Web del alumno: Iván Garzón Martín</h3>
+        </div>
+        <div class="ml-auto">
+            <img id="img" class="rounded-circle" src="img/ivan.jpeg" width="100" height="100"
+                class="d-inline-block align-top">
+        </div>
+
+    </nav>
+    <nav id="nav2" class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div>Asignaturas</div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ml-2">
+                    <a id="navbutt" class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item ml-2">
+                    <a id="navbutt" class="nav-link" href="asignaturas/interfaces.html">Interfaces</a>
+                </li>
+                <li class="nav-item ml-2">
+                    <a id="navbutt" class="nav-link" href="asignaturas/Cliente.html">Clientes</a>
+                </li>
+                <li class="nav-item ml-2">
+                    <a id="navbutt" class="nav-link" href="asignaturas/Servidor.html">Servidor</a>
+                </li>
+                <li class="nav-item ml-2">
+                    <a id="navbutt2" class="nav-link" href="asignaturas/Despliegue.html">Despliegue</a>
+                </li>
+                <li class="nav-item ml-2">
+                    <a id="navbutt2" class="nav-link" href="asignaturas/Empresa.html">Empresa</a>
+                </li>
+                <li class="nav-item ml-2">
+                    <a id="navbutt2" class="nav-link" href="asignaturas/hlc.html">HLC</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row text-center mt-4">
+
+                    <div class="col-md-12 mt-auto mb-auto">
+                        <ul class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">IES Alixar</a></li>
+                            <li class="breadcrumb-item"><a href="#">Alumno</a></li>
+                            <li class="breadcrumb-item"><a href="#">Iván Garzón Martín</a></li>
+                            <li class="breadcrumb-item active">Currículum</li>
+                        </ul>
+                        <h3>
+                            Currículum del <span style="color:#793e26; font-weight: bold">alumno</span>
+                        </h3>
+                    </div>
+                    <div class="offset-2"></div>
+                    <div class="col-md-8 mt-4 mb-auto">
+                        <p>Experiencia con un nivel ágil en servidores web y diseño. Capacidad para enfocar una
+                            estrategia corporativa y fomentar el pensamiento colaborativo para promover la propuesta de
+                            valor general. Años de experiencia utilizando herramientas y lenguajes diferentes. Agilidad
+                            para el control sobre HTML, CSS, XML y más lenguajes relacionados con el entorno cliente.
+                        </p>
+                    </div>
+                    <div class="offset-2"></div>
+                    <div class="offset-2"></div>
+                    <div class="col-md-8 mt-4 mb-auto">
+                        <p class="mb-4">Capacidad para trabajar en dicho idioma, con una titulación legal de un PET con
+                            capacidad para First. Conocimiento en el vocabulario más técnico sobre herramientas y
+                            desarrollo web.
+                        </p>
+                        <hr>
+                    </div>
+                    <div class="offset-2"></div>
+                </div>
+                <div class="row text-center mt-2 mb-4">
+                    <div class="offset-2"></div>
+                    <div class="col-md-8 mt-1">
+                        <div id="accordion">
+
+                            <div class="card">
+                                <div class="card-header">
+                                    <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                                        Calificación 2º DAW
+                                    </a>
+                                </div>
+                                <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>Nombre</th>
+                                                    <th>Asignatura</th>
+                                                    <th>Nota</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Iván</td>
+                                                    <td>Servidor</td>
+                                                    <td>6</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Iván</td>
+                                                    <td>Cliente</td>
+                                                    <td>7</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Iván</td>
+                                                    <td>Empresa</td>
+                                                    <td>8</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Iván</td>
+                                                    <td>HLC</td>
+                                                    <td>9</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Iván</td>
+                                                    <td>Despliegue</td>
+                                                    <td>6</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header">
+                                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                                        Opinión personal del alumno sobre el curso:
+                                    </a>
+                                </div>
+                                <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="jumbotron" style="padding: 5px !important;">
+                                            <div>Esta opinión será general sobre las asignaturas y profesorado...</div>
+                                        </div>
+                                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas magni alias,
+                                            quod voluptatibus, blanditiis ducimus porro eaque similique atque asperiores
+                                            dolore exercitationem distinctio amet suscipit rem ex dolor animi. Beatae.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header">
+                                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                                        Páginas web del alumno
+                                    </a>
+                                </div>
+                                <div id="collapseThree" class="collapse" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="dropdown">
+                                            <button type="button" class="btn btn-primary dropdown-toggle"
+                                                data-toggle="dropdown">
+                                                Páginas web realizadas por él
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Página personal</a>
+                                                <a class="dropdown-item" href="#">Peluquería Elisa Martín</a>
+                                                <a class="dropdown-item" href="#">IES Alixar</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="offset-2"></div>
+                </div>
+                <div class="row text-center mt-2 mb-4">
+                    <div class="col-sm-6 col-md-3 mt-1">
+                        <div class="button_cont"><a class="example_c" href="asignaturas/interfaces.html" target="_blank"
+                                rel="nofollow noopener">IES Alixar</a></div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 mt-1">
+                        <div class="button_cont"><a class="example_c" href="asignaturas/interfaces.html" target="_blank"
+                                rel="nofollow noopener">Moodle</a></div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3 mt-1">
+                        <div class="button_cont"><a class="example_c" href="asignaturas/interfaces.html" target="_blank"
+                                rel="nofollow noopener">Iván G.</a></div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 mt-1">
+                        <div class="button_cont"><a class="example_c" href="asignaturas/interfaces.html" target="_blank"
+                                rel="nofollow noopener">Junta</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="page-footer font-small special-color-dark pb-2 pt-4">
+
+        <!-- Footer Elements -->
+        <div class="container">
+
+            <!--Grid row-->
+            <div class="row text-center">
+
+                <!--Grid column-->
+                <div class="col-md-12">
+
+                    <p>@ Iván Garzón Martín 2º DAW</p>
+                </div>
+
+            </div>
+
+
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        #nav1 {
+            background: #CEFF7D !important;
+        }
+
+        #titulo {
+            font-style: oblique;
+            color: #8A8888;
+        }
+
+        #nav2 {
+            background-color: rgb(218, 250, 167);
+        }
+
+        .example_c {
+            color: #494949 !important;
+            text-transform: uppercase;
+            text-decoration: none;
+            background: #ffffff;
+            padding: 5px;
+            border: 2px solid #494949 !important;
+            display: inline-block;
+            transition: all 0.4s ease 0s;
+        }
+
+        .example_c:hover {
+            color: #ffffff !important;
+            background: #f6b93b;
+            border-color: #ad7e20 !important;
+            transition: all 0.4s ease 0s;
+        }
+
+        .myButton {
+            box-shadow: inset 0px 1px 0px 0px #ffffff;
+            background: linear-gradient(to bottom, #c2c2c2 5%, #dfdfdf 100%);
+            background-color: #c2c2c2;
+            border-radius: 6px;
+            border: 1px solid #d4d0d4;
+            cursor: pointer;
+            color: #7a787a;
+            font-family: Arial;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 6px 24px;
+            width: 50%;
+            text-decoration: none;
+            text-shadow: 0px 1px 0px #ffffff;
+            margin-left: 25%;
+        }
+
+        .myButton:hover {
+            background: linear-gradient(to bottom, #dfdfdf 5%, #c2c2c2 100%);
+            background-color: #dfdfdf;
+        }
+
+        .myButton:active {
+            position: relative;
+            top: 1px;
+        }
+
+        footer {
+            background-color: lightgray;
+        }
+
+        #bloque4 {
+            border: 2px solid rgb(152, 185, 112);
+            transition: all .1s ease-in-out;
+            width: 60% !important;
+            margin-left: 20%;
+            color: black;
+        }
+
+        #bloque4:hover {
+            border: 1px solid rgb(120, 168, 80);
+            padding: 10px;
+            border-radius: 10px;
+            transform: scale(1.1);
+            box-shadow: 0px 0px 25px #94db7f;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <nav id="nav1" class="navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+            <img id="img" class="rounded-circle" src="../img/descarga.png" width="80" height="80"
+                class="d-inline-block align-top">
+        </a>
+
+        <h3 style="margin-bottom: 0px !important;">IES Alixar</h3>
+
+        <div class="ml-auto">
+            <h3 style="margin-bottom: 0px !important;" id="titulo">Web del alumno: Iván Garzón Martín</h3>
+            <h3 style="margin-bottom: 0px !important; font-weight: bold;" id="titulo">Interfaces</h3>
+        </div>
+        <div class="ml-auto">
+            <img id="img" class="rounded-circle" src="../img/ivan.jpeg" width="100" height="100"
+                class="d-inline-block align-top">
+        </div>
+
+    </nav>
+    <nav id="nav2" class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div>Asignaturas</div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ml-2">
+                    <a id="navbutt" class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item ml-2">
+                    <a id="navbutt" class="nav-link" href="interfaces.html">Interfaces</a>
+                </li>
+                <li class="nav-item ml-2">
+                    <a id="navbutt" class="nav-link" href="Cliente.html">Clientes</a>
+                </li>
+                <li class="nav-item ml-2">
+                    <a id="navbutt" class="nav-link" href="Servidor.html">Servidor</a>
+                </li>
+                <li class="nav-item ml-2">
+                    <a id="navbutt2" class="nav-link" href="Despliegue.html">Despliegue</a>
+                </li>
+                <li class="nav-item ml-2">
+                    <a id="navbutt2" class="nav-link" href="Empresa.html">Empresa</a>
+                </li>
+                <li class="nav-item ml-2">
+                    <a id="navbutt2" class="nav-link" href="hlc.html">HLC</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row text-center mt-2">
+                    <div class="col-md-12 mt-3">
+                        <ul class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">IES Alixar</a></li>
+                            <li class="breadcrumb-item"><a href="#">Alumno</a></li>
+                            <li class="breadcrumb-item"><a href="#">Iván Garzón Martín</a></li>
+                            <li class="breadcrumb-item"><a href="#">Asignaturas</a></li>
+                            <li class="breadcrumb-item active">Interfaces</li>
+                        </ul>
+                        <div class="alert alert-warning">
+                            <strong>!Cuidado!</strong> El temario puede que no esté 100% actualizado.
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 mb-5 mt-4">
+                        <div id="bloque4" class="card" style="width: 18rem;">
+                            <a href="">
+                                <div class="card-body" style="color: black;">
+                                    <h5 class="card-title">Tema 1</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Ea, quia.
+                                    </p>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-secondary" style="width:100%">100%</div>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 mb-5 mt-4">
+                        <div id="bloque4" class="card" style="width: 18rem;">
+                            <a href="">
+                                <div class="card-body" style="color: black;">
+                                    <h5 class="card-title">Tema 2</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Ea, quia.
+                                    </p>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-secondary" style="width:100%">100%</div>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 mb-5 mt-4">
+                        <div id="bloque4" class="card" style="width: 18rem;">
+                            <a href="">
+                                <div class="card-body" style="color: black;">
+                                    <h5 class="card-title">Tema 3</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Ea, quia.
+                                    </p>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-secondary" style="width:100%">100%</div>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 mb-5 mt-5">
+                        <div id="bloque4" class="card" style="width: 18rem;">
+                            <a href="">
+                                <div class="card-body" style="color: black;">
+                                    <h5 class="card-title">Tema 4</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Ea, quia.
+                                    </p>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-secondary" style="width:100%">100%</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 mb-5 mt-5">
+                        <div id="bloque4" class="card" style="width: 18rem;">
+                            <a href="">
+                                <div class="card-body" style="color: black;">
+                                    <h5 class="card-title">Tema 5</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Ea, quia.
+                                    </p>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-secondary" style="width:70%">70%</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 mb-5 mt-5">
+                        <div id="bloque4" class="card" style="width: 18rem;">
+                            <a href="">
+                                <div class="card-body" style="color: black;">
+                                    <h5 class="card-title">Tema 6 <span class="badge badge-secondary"> Nuevo</span></h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Ea, quia.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="offset-4"></div>
+                    <div class="col-md-4" style="margin-left: 5%;">
+                        <ul class="pagination text-center">
+                            <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
+                        </ul>
+                    </div>
+                    <div class="offset-4"></div>
+
+                </div>
+                <hr style="width: 50%;">
+                <div class="row text-center mt-4 mb-4">
+                    <div class="col-sm-6 col-md-3 mt-1">
+                        <div class="button_cont"><a class="example_c" href="asignaturas/interfaces.html" target="_blank"
+                                rel="nofollow noopener">IES Alixar</a></div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 mt-1">
+                        <div class="button_cont"><a class="example_c" href="asignaturas/interfaces.html" target="_blank"
+                                rel="nofollow noopener">Moodle</a></div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3 mt-1">
+                        <div class="button_cont"><a class="example_c" href="asignaturas/interfaces.html" target="_blank"
+                                rel="nofollow noopener">Iván G.</a></div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 mt-1">
+                        <div class="button_cont"><a class="example_c" href="asignaturas/interfaces.html" target="_blank"
+                                rel="nofollow noopener">Junta</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="page-footer font-small special-color-dark pb-2 pt-4">
+
+        <!-- Footer Elements -->
+        <div class="container">
+
+            <!--Grid row-->
+            <div class="row text-center">
+
+                <!--Grid column-->
+                <div class="col-md-12">
+
+                    <p>@ Iván Garzón Martín 2º DAW</p>
+                </div>
+
+            </div>
+
+
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
