@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+
+    <script>
+        function displayPhrase() {
+            document.getElementById("click").innerHTML = 'New Phrase';
+        }
+
+        function hide(element) {
+
+            element.style.backgroundColor = "#c04f4f";
+            element.style.color = "white";
+            element.style.padding = "5px";
+            element.style.fontSize = "x-small";
+            element.style.borderRadius = "10px";
+        }
+    </script>
+
+</head>
+
+<body>
+    <nav style="background-color: #fd4545 !important;" id="nav1" class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="navbar-brand">
+            <img id="img" class="img-fluid" src="img/bingo.jpg" width="130" height="130"
+                class="d-inline-block align-top">
+        </div>
+        <div class="ml-auto">
+            <h3 style="margin-bottom: 0px !important; color: white;">Bingo Online!</h3>
+        </div>
+
+    </nav>
+    <nav id="nav2" class="navbar navbar-expand-md navbar-light bg-light">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ml-2">
+                    <a class="nav-link" href="" id="titulo">Index</a>
+                </li>
+                <li class="nav-item ml-2">
+                    <a class="nav-link" href="" id="titulo">Login</a>
+                </li>
+                <li class="nav-item ml-2">
+                    <a class="nav-link" href="" id="titulo">Register</a>
+                </li>
+            </ul>
+        </div>
+
+        <img id="imagen" class="img-fluid" src="img/retro.png" width="40" height="40" class="d-inline-block align-top">
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row text-center mt-3">
+            <div class="col-md-2" style="border-right: 1px #fcb1b1 solid;">
+                <p
+                    style="background-color: rgb(233, 89, 89); color: white; padding: 7px; border-bottom: 3px rgb(129, 69, 69) solid; text-shadow: 2px 2px black; border-radius: 10px;">
+                    Mi perfil</p>
+                <p><img class="img-fluid rounded-circle" style="border: 3px rgb(206, 127, 127) solid; padding: 10px;"
+                        src="img/icon.png" width="70%" alt=""></p>
+                <div class="pt-3"
+                    style="background-color: rgb(233, 89, 89); color: white; padding: 5px; border-bottom: 3px rgb(129, 69, 69) solid;border-radius: 10px;">
+                    <p style="font-style: italic;text-shadow: 2px 2px black;">Nombre:</p>
+                    <p>Billy Boy</p>
+                    <p style="font-style: italic;text-shadow: 2px 2px black;">Puntos:</p>
+                    <p>2380</p>
+                </div>
+
+            </div>
+            <div class="col-md-10">
+                <p
+                    style="background-color: rgb(233, 89, 89); color: white; padding: 7px; border-bottom: 3px rgb(129, 69, 69) solid;text-shadow: 2px 2px black;border-radius: 10px;">
+                    Mis cartones</p>
+                <div class="row pl-1 pt-4">
+                    <div class="col-lg-12 col-xl-6">
+                        <!--Table-->
+                        <table id="tablePreview" class="table table-bordered">
+                            <tbody>
+                                <tr>
+                                    <td id="click"><span id="num" onclick="hide(this);">01</span></td>
+                                    <td id="click"><span id="num" onclick="hide(this);">14</span></td>
+                                    <td id="click"><span id="num" onclick="hide(this);">21</span></td>
+                                    <td id="null"><img src="img/retro.png" class="img-fluid" width="27" height="27"
+                                            alt=""></td>
+                                    <td id="click"><span id="num" onclick="hide(this);">43</span></td>
+                                    <td id="null"><img src="img/retro.png" class="img-fluid" width="27" height="27"
+                                            alt=""></td>
+                                    <td id="null"><img src="img/retro.png" class="img-fluid" width="27" height="27"
+                                            alt=""></td>
+                                    <td id="click"><span id="num" onclick="hide(this);">75</span></td>
+                                    <td id="null"><img src="img/retro.png" class="img-fluid" width="27" height="27"
+                                            alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td id="click"><span id="num" onclick="hide(this);">05</span></td>
+                                    <td id="null"><img src="img/retro.png" class="img-fluid" width="27" height="27"
+                                            alt=""></td>
+                                    <td id="click"><span id="num" onclick="hide(this);">22</span></td>
+                                    <td id="click"><span id="num" onclick="hide(this);">36</span></td>
+                                    <td id="null"><img src="img/retro.png" class="img-fluid" width="27" height="27"
+                                            alt=""></td>
+                                    <td id="click"><span id="num" onclick="hide(this);">51</span></td>
+                                    <td id="null"><img src="img/retro.png" class="img-fluid" width="27" height="27"
+                                            alt=""></td>
+                                    <td id="click"><span id="num" onclick="hide(this);">79</span></td>
+                                    <td id="null"><img src="img/retro.png" class="img-fluid" width="27" height="27"
+                                            alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td id="null"><img src="img/retro.png" class="img-fluid" width="27" height="27"
+                                            alt=""></td>
+                                    <td id="click"><span id="num" onclick="hide(this);">19</span></td>
+                                    <td id="null"><img src="img/retro.png" class="img-fluid" width="27" height="27"
+                                            alt=""></td>
+                                    <td id="click"><span id="num" onclick="hide(this);">39</span></td>
+                                    <td id="null"><img src="img/retro.png" class="img-fluid" width="27" height="27"
+                                            alt=""></td>
+                                    <td id="click"><span id="num" onclick="hide(this);">59</span></td>
+                                    <td id="click"><span id="num" onclick="hide(this);">67</span></td>
+                                    <td id="null"><img src="img/retro.png" class="img-fluid" width="27" height="27"
+                                            alt=""></td>
+                                    <td id="click"><span id="num" onclick="hide(this);">89</span></td>
+                                </tr>
+                            </tbody>
+                            <!--Table body-->
+                        </table>
+                    </div>
+                    <div class="col-lg-12 col-xl-5">
+                        <!--Table-->
+                        <table id="tablePreview" class="table table-bordered">
+                            <tbody>
+                                <tr>
+                                    <td id="click"><span id="num" onclick="hide(this);">02</span></td>
+                                    <td id="null"><img src="img/retro.png" class="img-fluid" width="27" height="27"
+                                            alt=""></td>
+                                    <td id="null"><img src="img/retro.png" class="img-fluid" width="27" height="27"
+                                            alt=""></td>
+                                    <td id="click"><span id="num" onclick="hide(this);">35</span></td>
+                                    <td id="click"><span id="num" onclick="hide(this);">48</span></td>
+                                    <td id="null"><img src="img/retro.png" class="img-fluid" width="27" height="27"
+                                            alt=""></td>
+                                    <td id="click"><span id="num" onclick="hide(this);">61</span></td>
+                                    <td id="null"><img src="img/retro.png" class="img-fluid" width="27" height="27"
+                                            alt=""></td>
+                                    <td id="click"><span id="num" onclick="hide(this);">84</span></td>
+                                </tr>
+                                <tr>
+                                    <td id="null"><img src="img/retro.png" class="img-fluid" width="27" height="27"
+                                            alt=""></td>
+                                    <td id="click"><span id="num" onclick="hide(this);">18</span></td>
+                                    <td id="null"><img src="img/retro.png" class="img-fluid" width="27" height="27"
+                                            alt=""></td>
+                                    <td id="click"><span id="num" onclick="hide(this);">36</span></td>
+                                    <td id="null"><img src="img/retro.png" class="img-fluid" width="27" height="27"
+                                            alt=""></td>
+                                    <td id="click"><span id="num" onclick="hide(this);">55</span></td>
+                                    <td id="click"><span id="num" onclick="hide(this);">63</span></td>
+                                    <td id="null"><img src="img/retro.png" class="img-fluid" width="27" height="27"
+                                            alt=""></td>
+                                    <td id="click"><span id="num" onclick="hide(this);">86</span></td>
+                                </tr>
+                                <tr>
+                                    <td id="null"><img src="img/retro.png" class="img-fluid" width="27" height="27"
+                                            alt=""></td>
+                                    <td id="click"><span id="num" onclick="hide(this);">19</span></td>
+                                    <td id="click"><span id="num" onclick="hide(this);">27</span></td>
+                                    <td id="null"><img src="img/retro.png" class="img-fluid" width="27" height="27"
+                                            alt=""></td>
+                                    <td id="click"><span id="num" onclick="hide(this);">49</span></td>
+                                    <td id="click"><span id="num" onclick="hide(this);">57</span></td>
+                                    <td id="null"><img src="img/retro.png" class="img-fluid" width="27" height="27"
+                                            alt=""></td>
+                                    <td id="click"><span id="num" onclick="hide(this);">79</span></td>
+                                    <td id="null"><img src="img/retro.png" class="img-fluid" width="27" height="27"
+                                            alt=""></td>
+                                </tr>
+                            </tbody>
+                            <!--Table body-->
+                        </table>
+                    </div>
+                </div>
+                <div class="row pl-1 pt-4">
+                    <div class="col-lg-12 col-xl-6 mt-3">
+                        <!--Table-->
+                        <table id="tablePreview" class="table table-bordered">
+                            <tbody>
+                                <tr>
+                                    <td id="null"><img src="img/retro.png" class="img-fluid" width="27" height="27"
+                                            alt=""></td>
+                                    <td id="click"><span id="num" onclick="hide(this);">11</span></td>
+                                    <td id="click"><span id="num" onclick="hide(this);">23</span></td>
+                                    <td id="null"><img src="img/retro.png" class="img-fluid" width="27" height="27"
+                                            alt=""></td>
+                                    <td id="click"><span id="num" onclick="hide(this);">47</span></td>
+                                    <td id="click"><span id="num" onclick="hide(this);">52</span></td>
+                                    <td id="null"><img src="img/retro.png" class="img-fluid" width="27" height="27"
+                                            alt=""></td>
+                                    <td id="click"><span id="num" onclick="hide(this);">72</span></td>
+                                    <td id="null"><img src="img/retro.png" class="img-fluid" width="27" height="27"
+                                            alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td id="null"><img src="img/retro.png" class="img-fluid" width="27" height="27"
+                                            alt=""></td>
+                                    <td id="null"><img src="img/retro.png" class="img-fluid" width="27" height="27"
+                                            alt=""></td>
+                                    <td id="click"><span id="num" onclick="hide(this);">26</span></td>
+                                    <td id="click"><span id="num" onclick="hide(this);">34</span></td>
+                                    <td id="click"><span id="num" onclick="hide(this);">49</span></td>
+                                    <td id="null"><img src="img/retro.png" class="img-fluid" width="27" height="27"
+                                            alt=""></td>
+                                    <td id="click"><span id="num" onclick="hide(this);">68</span></td>
+                                    <td id="null"><img src="img/retro.png" class="img-fluid" width="27" height="27"
+                                            alt=""></td>
+                                    <td id="click"><span id="num" onclick="hide(this);">88</span></td>
+                                </tr>
+                                <tr>
+                                    <td id="click"><span id="num" onclick="hide(this);">03</span></td>
+                                    <td id="click"><span id="num" onclick="hide(this);">17</span></td>
+                                    <td id="null"><img src="img/retro.png" class="img-fluid" width="27" height="27"
+                                            alt=""></td>
+                                    <td id="click"><span id="num" onclick="hide(this);">38</span></td>
+                                    <td id="null"><img src="img/retro.png" class="img-fluid" width="27" height="27"
+                                            alt=""></td>
+                                    <td id="click"><span id="num" onclick="hide(this);">56</span></td>
+                                    <td id="null"><img src="img/retro.png" class="img-fluid" width="27" height="27"
+                                            alt=""></td>
+                                    <td id="click"><span id="num" onclick="hide(this);">78</span></td>
+                                    <td id="null"><img src="img/retro.png" class="img-fluid" width="27" height="27"
+                                            alt=""></td>
+                                </tr>
+                            </tbody>
+                            <!--Table body-->
+                        </table>
+                    </div>
+                    <div class="col-lg-12 col-xl-5 mt-3">
+                        <!--Table-->
+                        <table id="tablePreview" class="table table-bordered">
+                            <tbody>
+                                <tr>
+                                    <td id="click"><span id="num" onclick="hide(this);">02</span></td>
+                                    <td id="null"><img src="img/retro.png" class="img-fluid" width="27" height="27"
+                                            alt=""></td>
+                                    <td id="click"><span id="num" onclick="hide(this);">24</span></td>
+                                    <td id="click"><span id="num" onclick="hide(this);">38</span></td>
+                                    <td id="null"><img src="img/retro.png" class="img-fluid" width="27" height="27"
+                                            alt=""></td>
+                                    <td id="click"><span id="num" onclick="hide(this);">53</span></td>
+                                    <td id="click"><span id="num" onclick="hide(this);">61</span></td>
+                                    <td id="null"><img src="img/retro.png" class="img-fluid" width="27" height="27"
+                                            alt=""></td>
+                                    <td id="null"><img src="img/retro.png" class="img-fluid" width="27" height="27"
+                                            alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td id="click"><span id="num" onclick="hide(this);">3</span></td>
+                                    <td id="click"><span id="num" onclick="hide(this);">11</span></td>
+                                    <td id="null"><img src="img/retro.png" class="img-fluid" width="27" height="27"
+                                            alt=""></td>
+                                    <td id="null"><img src="img/retro.png" class="img-fluid" width="27" height="27"
+                                            alt=""></td>
+                                    <td id="click"><span id="num" onclick="hide(this);">44</span></td>
+                                    <td id="null"><img src="img/retro.png" class="img-fluid" width="27" height="27"
+                                            alt=""></td>
+                                    <td id="click"><span id="num" onclick="hide(this);">67</span></td>
+                                    <td id="click"><span id="num" onclick="hide(this);">78</span></td>
+                                    <td id="null"><img src="img/retro.png" class="img-fluid" width="27" height="27"
+                                            alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td id="null"><img src="img/retro.png" class="img-fluid" width="27" height="27"
+                                            alt=""></td>
+                                    <td id="click"><span id="num" onclick="hide(this);">18</span></td>
+                                    <td id="null"><img src="img/retro.png" class="img-fluid" width="27" height="27"
+                                            alt=""></td>
+                                    <td id="click"><span id="num" onclick="hide(this);">39</span></td>
+                                    <td id="null"><img src="img/retro.png" class="img-fluid" width="27" height="27"
+                                            alt=""></td>
+                                    <td id="click"><span id="num" onclick="hide(this);">59</span></td>
+                                    <td id="null"><img src="img/retro.png" class="img-fluid" width="27" height="27"
+                                            alt=""></td>
+                                    <td id="click"><span id="num" onclick="hide(this);">79</span></td>
+                                    <td id="click"><span id="num" onclick="hide(this);">87</span></td>
+                                </tr>
+                            </tbody>
+                            <!--Table body-->
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
